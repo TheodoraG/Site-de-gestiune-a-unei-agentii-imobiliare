@@ -1,0 +1,92 @@
+body, html{
+	font-family: Andale Mono, monospace; /*familia de fonturi aplicata intregii pagini*/
+	font-weight: bold; /*litere boldate*/
+	font-variant: small-caps;
+	height: 100%;/*pt a se intinde pe toata pagina*/
+	margin: 0; /*fara margine*/
+	background-image: url("images/userInreg.jpg"); /*imaginea de fundal*/
+	background-position: center;
+	background-repeat: no-repeat; /*nu se repeta imag de fundal*/
+	background-size: cover; /*imag acopera intreaga pagina*/
+	position: relative; /*poztionare relativa*/
+}
+
+* {
+  box-sizing: border-box; /*pt ca elementele sa nu depaseasca limitele impuse*/
+}
+
+fieldset {
+	border-color: blue; /*culoarea marginii*/
+	border-radius: 30px; /*margine rotunjita*/
+	padding: 20px; /*spatiere 20px*/
+	color: #800000; /*culoare font*/
+	font-size: 20px; /*dimensiune font*/
+}
+
+input[type=submit] { /*stil buton de submit*/
+	background-color:#008080;
+	padding: 12px 20px;
+	border: none;
+	font-family: Andale Mono, monospace;
+	cursor: pointer;
+}
+
+input[type=submit]:hover { /*stil buton de submit cand este mouse-ul pe el*/
+	background-color: #45a049;
+}
+
+.btn{
+	background-color: #4CAF50; /* culoare de fundal */
+	color: white; /*culoare text*/
+	text-align: center; /*centrare text*/
+	border-radius: 30px; /*rotunjire margine*/
+	width: 30%; /*se intinde pe 30% din latime*/
+	font-size: 20px; /*dimensiune text*/
+}
+
+
+#tabel{
+	border-collapse: collapse; /*fara borduri intre celule*/
+	width: 100%; /*latimea cat toata pagina*/
+	background-color: #f2f2f2;
+}
+
+#tabel tr:hover{ /*cum se modifica liniile cand mouse-ul e pe ele*/
+	background-color: #ddd; 
+}
+
+#tabel td, #tabel th{
+	border: 1px solid #ddd; /*margine de 1px*/
+	padding: 8px; /*spatiere 8 px*/
+}
+
+#tabel td{
+	text-align: center; /*centrare text*/
+}
+
+#tabel th{
+	padding-top: 12px; /*spatiere 12px sus*/
+	padding-bottom: 12px; /*spatiere 12px jos*/
+	text-align: center; /*centrare text*/
+	background-color: #4CAF50; /*culoare fundal*/
+	color: white; /*culoare text*/
+}
+
+.column {
+	float: left; /*elementul in partea stanga*/
+	width: 50%; /*se intinde pe 50% din latime -- 2coloane*/
+	margin-top: 6px; /*marginea de sus de 6px*/
+	padding: 20px; /*spatiere 20px*/
+}
+
+.row:after {
+	content: "";
+	display: table; /*afisare elemnte unul sub altul - tabel*/
+	clear: both;
+}
+@media screen and (max-width: 700px) { /*daca ecranul e mai mic de 700px, colonele trec unele sub altele*/
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

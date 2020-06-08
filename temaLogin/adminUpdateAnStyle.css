@@ -1,0 +1,41 @@
+body, html{
+	font-family: Andale Mono, monospace; /*familia de fonturi aplicata intregii pagini*/
+	font-weight: bold; /*litere boldate*/
+	font-variant: small-caps; /*litere mici si mari*/
+	height: 100%;/*pt a se intinde pe toata pagina*/
+	margin: 0; /*fara margine*/
+	background-image: url("images/updateAnuntAdmin.jpg"); /*imaginea de fundal*/
+	background-position: center; /*centrare imagine*/
+	background-repeat: no-repeat; /*nu se repeta imag de fundal*/
+	background-size: cover; /*imag acopera intreaga pagina*/
+	position: relative; /*poztionare relativa*/
+}
+
+* {
+  box-sizing: border-box; /*pt ca elementele sa nu depaseasca limitele impuse*/
+}
+
+.container{
+	position: absolute; /*pozitionare absoluta*/
+	right: 0; /*aliniere la dreapta jos*/
+	bottom:0;
+	margin: 30px; /*marigine de 30px*/
+	padding: 16px; /*spatiere 16px*/
+	background-color: white; /*culoare fundal*/
+	border-radius: 30px; /*margine rotunjita*/
+}
+
+.btn {
+	background-color: #4CAF50; /*culoare fundal buton*/
+	color: white; /*culoare text*/
+	padding: 16px 20px; /*spatiere sus-jos 16px, stanga-drepata 20px*/
+	border: none; /*fara margine*/
+	cursor: pointer;
+	width: 25%; /*se intinde pe 25% din lungimea elementului in care se gaseste*/
+	opacity: 0.9; /*transparenta*/
+	border-radius: 30px;
+}
+
+.btn:hover { /*cum se schimba butonul cand e mouse-ul pe el*/
+	opacity: 1; /*margine rotunjita*/
+}

@@ -1,0 +1,67 @@
+body, html{
+	font-family: Andale Mono, monospace; /*familia de fonturi aplicata intregii pagini*/
+	font-weight: bold; /*litere boldate*/
+	font-variant: small-caps; /*litere mici si mari*/
+	height: 100%;/*pt a se intinde pe toata pagina*/
+	margin: 0; /*fara margine*/
+	background-image: url("images/anunturi.jpg"); /*imaginea de fundal*/
+	background-position: center; /*centrare imagine*/
+	background-repeat: no-repeat; /*nu se repeta imag de fundal*/
+	background-size: cover; /*imag acopera intreaga pagina*/
+	position: relative; /*poztionare relativa*/
+}
+
+* {
+  box-sizing: border-box; /*pt ca elementele sa nu depaseasca limitele impuse*/
+}
+
+.btn {
+	background-color: #6B8E23; /*culoare fundal buton*/
+	border-radius: 25px; /*margine rotunjita*/
+	padding: 15px 32px; /*spatiere 15 px sus si jos, 32 px stanga-dreapta*/
+	text-align: center; /*centrare text*/
+	font-size: 24px; /*dimensiue font*/
+	display: inline-block; /*in linie cu alte elemente*/
+	cursor: pointer;
+}
+
+.btn:hover { /*cum se schimba butonul cand e mouse-ul pe el*/
+	background-color: #008080;
+	color: white;
+}
+
+fieldset {
+	background-color: #008B8B; /*culoare de fundal*/
+	border-color: blue; /*culoarea marginii*/
+	border-radius: 30px; /*margine rotunjita*/
+	padding: 20px; /*spatiere 20px*/
+	position: absolute;  /*pozitionare absoluta, nu raportata la alt element*/
+	width:100%; /*latime cat toata pagina*/
+}
+
+#tabel{
+	border-collapse: collapse; /*fara borduri intre celule*/
+	width: 100%; /*latimea cat toata pagina*/
+	background-color: #f2f2f2; /*culoare fundal*/
+}
+
+#tabel tr:hover{ /*celulele se schimba cand este mouse-ul pe ele*/
+	background-color: #ddd;
+}
+
+#tabel td, #tabel th{
+	border: 1px solid #ddd; /*margine*/
+	padding: 8px; /*spatiere 8px*/
+}
+
+#tabel td{
+	text-align: center; /*centrare text*/
+}
+
+#tabel th{
+	padding-top: 12px; /*spatiere partea de sus*/
+	padding-bottom: 12px; /*spatiere partea de jos*/
+	text-align: center; /*centrare text*/
+	background-color: #4CAF50; /*culoare fundal cap de tabel*/
+	color: white; /*culoare text*/
+}

@@ -1,0 +1,67 @@
+body, html{
+	font-family: Andale Mono, monospace; /*familia de fonturi aplicata intregii pagini*/
+	font-weight: bold; /*litere boldate*/
+	font-variant: small-caps;
+	height: 100%;/*pt a se intinde pe toata pagina*/
+	margin: 0; /*fara margine*/
+	background-image: url("images/adminOperatii.jpg"); /*imaginea de fundal*/
+	background-position: center; /*centrare imagine*/
+	background-repeat: no-repeat; /*nu se repeta imag de fundal*/
+	background-size: cover; /*imag acopera intreaga pagina*/
+	position: relative; /*poztionare relativa*/
+}
+
+* {
+  box-sizing: border-box; /*pt ca elementele sa nu depaseasca limitele impuse*/
+}
+
+.btn {
+	background-color: #6B8E23; /*culoare de fundal*/
+	border-radius: 25px; /*rotunjire margine*/
+	padding: 15px 32px; /*spatiere sus-jos 15 px, stanga-dreapta 32 px*/
+	text-align: center; /*aliniere text*/
+	font-size: 24px; /*dimensiune font*/
+	display: inline-block; /*in linie cu alte elemente*/
+	cursor: pointer;
+}
+
+.btn:hover { /*cum se schimba butonul cand e mouse-ul pe el*/
+	background-color: #008080;
+	color: white;
+}
+
+fieldset {
+	background-color: #008B8B; /*culoare de fundal*/
+	border-color: blue; /*culoarea marginii*/
+	border-radius: 30px; /*margine rotunjita*/
+	padding: 20px; /*spatiere 20px*/
+	position: absolute; /*pozitionare absoluta*/
+	width:100%; /*se intinde pe toata latimea paginii*/
+}
+
+#tabel{
+	border-collapse: collapse; /*fara borduri intre celule*/
+	width: 100%; /*latimea cat toata pagina*/
+	background-color: #f2f2f2; /*culoare fundal*/
+}
+
+#tabel tr:hover{ /*cum se schimba butonul cand e mouse-ul pe el*/
+	background-color: #ddd;
+}
+
+#tabel td, #tabel th{
+	border: 1px solid #ddd; /*margine de 1px*/
+	padding: 8px; /*spatiere 8px*/
+}
+
+#tabel td{
+	text-align: center; /*centrare text*/
+}
+
+#tabel th{/*stil cap de tabel*/
+	padding-top: 12px; /*spatiere fata de marginea de sus*/
+	padding-bottom: 12px; /*spatiere fata de marginea de jos*/
+	text-align: center;
+	background-color: #4CAF50;
+	color: white;
+}

@@ -1,0 +1,24 @@
+body, html{
+	font-family: Andale Mono, monospace; /*familia de fonturi aplicata intregii pagini*/
+	font-weight: bold; /*litere boldate*/
+	font-size: 30px; /*dimensiune text*/
+	font-variant: small-caps;
+	height: 100%;/*pt a se intinde pe toata pagina*/
+	margin: 0; /*fara margine*/
+	background-image: url("images/ok.jpg"); /*imaginea de fundal*/
+	background-position: center; /*centrare imagine*/
+	background-repeat: no-repeat; /*nu se repeta imag de fundal*/
+	background-size: cover; /*imag acopera intreaga pagina*/
+	position: relative; /*poztionare relativa*/
+}
+
+.box { /*pt incadrarea intr-un chenar a unor elemente*/
+	position: absolute; /*pozitionare absoluta*/
+	bottom: 0 ; /*centrare in josul paginii*/
+	padding:20px; /*spatiere 20px*/
+	opacity:0.5; /*transparenta*/
+	background: rgb(0, 0, 0); /*culoare de fundal*/
+	color: #f1f1f1; /*culoare text*/
+	width:100%; /*se intinde pe toata latimea*/
+}
+
